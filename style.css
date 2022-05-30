@@ -1,0 +1,281 @@
+/* Body stuff */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+   body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+   }
+   a {
+    text-decoration: none;
+   }
+   li {
+    list-style: none;
+   }
+
+   /* NAVBAR styling */
+    .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: rgb(150, 41, 59);
+    color: #FFF;
+   }
+   .nav-links a {
+    color: #fff;
+   }
+   /* Logo */
+   .logo {
+    font-size: 32px;
+   }
+   /* NAVBAR MENU */
+   .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 20px;
+   }
+   .menu li:hover {
+    background-color: #4c9e9e;
+    border-radius: 5px;
+    transition: 0.3s ease;
+   }
+   .menu li {
+    padding: 5px 20px;
+   }
+   /* Dropdown Menu */
+   .services {
+    position: relative; 
+   }
+   .dropdown {
+    background-color: rgb(1, 139, 139);
+    padding: 1em 0;
+    position: absolute; 
+    display: none;
+    border-radius: 8px;
+    top: 35px;
+   }
+   .dropdown li + li {
+    margin-top: 10px;
+   }
+   .dropdown li {
+    padding: 0.5em 1em;
+    width: 8em;
+    text-align: center;
+   }
+   .dropdown li:hover {
+    background-color: #669DB3FF;
+   }
+   .services:hover .dropdown {
+    display: block;
+   }
+   /*RESPONSIVE NAVBAR MENU STARTS*/
+
+
+   @media (max-width: 768px) {
+   .menu { 
+    display:none;
+    position: absolute;
+    background-color:teal;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+   }
+   .menu li:hover {
+    display: inline-block;
+    background-color:#4c9e9e;
+    transition: 2s ease;
+   }
+   .menu li + li {
+    margin-top: 12px;
+   }
+   input[type=checkbox]:checked ~ .menu{
+    display: block;
+   }
+
+   }
+   .dropdown {
+    left: 50%;
+    top: 30px;
+    transform: translateX(35%);
+   }
+   .dropdown li:hover {
+    background-color: #4c9e9e;
+   }
+   
+
+    .background {
+    background-image: url('https://tenor.com/view/tiredface-gif-4425393.gif');
+    background-repeat: no-repeat;
+    background-size: 100%;
+   }  
+   .dummy-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    z-index: -1;
+    padding: 0 20px ;
+    text-align: center;
+    transform: translate(-50%, -50%);
+   }
+    .dummy-text h2{
+        font-size: 45px;
+        margin: 5px 0;
+        color:black
+        
+    }
+    .dummy-text h1{
+            font-size: 30px;
+            margin: 5px 0;
+            color:black
+    }
+    .dummy-text2 h2{
+         font-size: 45px;
+        margin: 5px 0;
+        color:rgb(255, 255, 255)
+    }
+    .dummy-text2{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 100%;
+        z-index: -1;
+        padding: 0 20px ;
+        text-align: center;
+        transform: translate(-50%, -50%);
+    }
+    .socials body {
+      margin:0;
+      padding:0;
+      background:#ccc;
+      font-family: 'Roboto Condensed', sans-serif;
+    
+    }
+    
+    .socials ul {
+      position:absolute;
+      top:50%;
+      left:50%;
+      transform:translate(-50%, -50%);
+      display:flex;
+      margin:0;
+      padding:0;
+    }
+    
+    .socials ul li {
+      list-style:none;
+      margin:0 5px;
+    }
+    
+    .socials ul li a .fa {
+      font-size: 40px;
+      color: #262626;
+      line-height:80px;
+      transition: .5s;
+      padding-right: 14px;
+    }
+    
+    .socials ul li a span {
+      padding:0;
+      margin:0;
+      position:absolute;
+      top: 30px;
+      color: #262626;
+      letter-spacing: 4px;
+      transition: .5s;
+    }
+    
+    .socials ul li a {
+      text-decoration: none;
+      display:absolute;
+      display:block;
+      width:210px;
+      height:80px;
+      background: #fff;
+      text-align:left;
+      padding-left: 20px;
+      transform: rotate(-30deg) skew(25deg) translate(0,0);
+      transition:.5s;
+      box-shadow: -20px 20px 10px rgba(0,0,0,.5);
+    }
+    .socials ul li a:before {
+      content: '';
+      position: absolute;
+      top:10px;
+      left:-20px;
+      height:100%;
+      width:20px;
+      background: #b1b1b1;
+      transform: .5s;
+      transform: rotate(0deg) skewY(-45deg);
+    }
+    .socials ul li a:after {
+      content: '';
+      position: absolute;
+      bottom:-20px;
+      left:-10px;
+      height:20px;
+      width:100%;
+      background: #b1b1b1;
+      transform: .5s;
+      transform: rotate(0deg) skewX(-45deg);
+    }
+    
+    .socials ul li a:hover {
+      transform: rotate(-30deg) skew(25deg) translate(20px,-15px);
+      box-shadow: -50px 50px 50px rgba(0,0,0,.5);
+    }
+    
+    .socials ul li:hover .fa {
+      color:#fff;
+    }
+    
+    .socials ul li:hover span {
+      color:#fff;
+    }
+    
+    .socials ul li:hover:nth-child(1) a{
+      background: #3b5998;
+    }
+    .socials ul li:hover:nth-child(1) a:before{
+      background: #365492;
+    }
+    .socials ul li:hover:nth-child(1) a:after{
+      background: #4a69ad;
+    }
+    
+    .socials ul li:hover:nth-child(2) a{
+      background: #00aced;
+    }
+    .socials ul li:hover:nth-child(2) a:before{
+      background: #097aa5;
+    }
+    .socials ul li:hover:nth-child(2) a:after{
+      background: #53b9e0;
+    }
+    
+    .socials ul li:hover:nth-child(3) a{
+      background: #dd4b39;
+    }
+    .socials ul li:hover:nth-child(3) a:before{
+      background: #b33a2b;
+    }
+    .socials ul li:hover:nth-child(3) a:after{
+      background: #e66a5a;
+    }
+    
+    .socials ul li:hover:nth-child(4) a{
+      background: #e4405f;
+    }
+    .socials ul li:hover:nth-child(4) a:before{
+      background: #d81c3f;
+    }
+    .socials ul li:hover:nth-child(4) a:after{
+      background: #e46880;
+    }
+  
+
+    
